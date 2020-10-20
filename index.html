@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <body>
+         <script type="text/javascript"> 
+            var imgArr = ["1.jpg","2.jpg","3.jpg"];
+            function displayImg(){
+               var num = Math.floor(Math.random() * (imgArr.length));
+               document.canvas.src="images/"+imgArr[num];
+         }
+         </script>
+         <input type="button" onClick="displayImg()" value="Display Random Image">
+         <img src="images/4.jpg" name="canvas" style="width:200px"/>
+      </body>
+   </head>
+</html>
